@@ -1,0 +1,39 @@
+
+<section class="generic-counter">
+	<h1>Word Cloud Counter</h1>
+	<div class="container" v-if="text">
+		<div class="row">
+			<p>Input Text:</p>
+		</div>
+		<div class="row text-rendering">
+			{{ text }}
+		</div>
+		<button class="btn btn-default"><router-link :to="'home'">Change text</router-link></button>
+		<hr>
+		<div class="row results">
+			<h3 :class="{ active: isCloudActive }" @click="isCloudActive = !isCloudActive"><span>Cloud</span></h3>
+			<ul :class="{ active: isCloudActive }">
+				<li v-for="(number, word) in cloud">
+					word "{{word}}" has been found {{number}} times
+				</li>
+			</ul>{{isCloudActive}}
+			<p>Compilation done in {{chronoCheckText}}ms</p>
+		</div>
+		<div class="row results">
+				<h3 :class="{ active: isReversedCloudActive }" @click="isReversedCloudActive = !isReversedCloudActive"><span>Reversed Cloud</span></h3>
+				<ul :class="{ active: isReversedCloudActive }">
+					<li v-for="(number, word) in reversedCloud">
+						word "{{word}}" has been found {{number}} times
+					</li>
+				</ul>
+				<p>Compilation done in {{chronoCheckTextByreverse}}ms</p>
+			</div>
+	</div>
+	<div class="container" v-else>
+		<div class="row">
+			<p>Please give a text to look into</p>
+			<button class="btn btn-default"><router-link :to="'home'">Go Back</router-link></button>
+		</div>
+	</div>
+</section>
+
