@@ -101,7 +101,7 @@ export default {
 
                     if (ponctuation.includes(previousLetter)) {
                         word = word.toLowerCase()
-                        i-- // to go faster we are removing unecessary checks
+                        i-- // to go faster we are removing unecessary ponctuation
                     }
                     wordLength = 0
 
