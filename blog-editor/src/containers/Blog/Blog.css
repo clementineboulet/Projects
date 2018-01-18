@@ -1,0 +1,33 @@
+.Blog {
+    font-size:30px;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+}
+.Blog header{
+    background-color: gray;
+    padding: 15px; 
+    color: white;
+    font-size:initial;
+}
+
+.Blog ul {
+    display: flex;
+}
+
+.Blog li {
+    margin: 0 10px;
+    display: inherit;
+}
+
+.Blog a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.Blog h1,
+.Blog h4 {
+    text-align: center;
+}
+
+.HasEdit {
+    opacity: 0.5;
+}

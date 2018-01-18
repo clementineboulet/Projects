@@ -1,0 +1,44 @@
+{
+    "title": "My Blog",
+    "subtitle": "Some cute Blog about life",
+    "author": "Jane Doe",
+    "about_author": "some very long text about what the person is about.\n And some other text below that.\n And another line of text.",
+    "cards": [
+        {
+            "id": 1,
+            "title": "My first Post",
+            "subtitle": "I'm so excited",
+            "elements": [
+                {
+                    "type": "img",
+                    "name": "ES6",
+                    "src": "https://derickbailey.com/wp-content/uploads/2015/08/arrow-functions.jpg",
+                    "description": "an ES6 image"
+                },
+                {
+                    "type": "text",
+                    "name": "ES6 comments",
+                    "text": "I've always wanted to work with ES6. \n I'm also working with React! \n And Redux!"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "My second Post",
+            "subtitle": "This is fun!",
+            "elements": [
+                {
+                    "type": "img",
+                    "name": "ES6",
+                    "src": "https://desarrolloweb.com/archivoimg/general/4134.jpg",
+                    "description": "ES6 arrow functions are fun"
+                },
+                {
+                    "type": "text",
+                    "name": "Arrow functions",
+                    "text": "Arrow functions are complex beings. The \"this\" pointer gets trickier. \n I don't know if I like that."
+                }
+            ]
+        }
+    ]
+}

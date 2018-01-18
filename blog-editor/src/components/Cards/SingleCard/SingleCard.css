@@ -1,0 +1,8 @@
+.Card {
+    padding: 15px;
+    text-align: center;
+}
+
+.Card img {
+    max-width: 100%;
+}

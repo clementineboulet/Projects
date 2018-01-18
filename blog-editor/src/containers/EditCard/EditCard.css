@@ -1,0 +1,82 @@
+.Edit {
+    width: 70%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    background-color: white;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    border-left: 2px solid gray;
+    pointer-events:none;
+    color: inherit;
+    cursor: default;
+    text-decoration: none;
+}
+
+.Edit ul {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 4fr;
+    pointer-events:auto;
+}
+
+.Edit li {
+    display: block;
+    margin: 0 10px;
+    align-self: center;
+}
+
+.Edit li > * {
+    display: inherit;
+    align-self: baseline;
+    text-align: center;
+}
+
+.Edit p {
+    margin-right: 10px;
+    text-align: right;
+}
+
+.Edit input {
+    height: min-content;
+    text-align: left;
+}
+
+.Edit::after {
+    content:"X";
+    border: 1px solid gray;
+    padding: 5px 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    pointer-events:auto;
+}
+
+.Header {
+
+}
+
+.Body {
+
+}
+
+.FigResults{
+    grid-column: 3/4;
+    grid-row: 1/4;
+}
+
+.TextResults {
+    grid-column: 3/4;
+    grid-row: 4/6;
+}
+
+.Body img {
+    max-height: 100px;
+    max-width: 100%
+}
+
+.displayLineBreak {
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
